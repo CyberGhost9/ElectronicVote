@@ -18,6 +18,10 @@ public class PoliticalParties {
         for (int i=0;i<limit;i++) {
             System.out.println(i+":-"+partyName[i]+":"+candidateName[i]);
         }
+        /*
+        *
+        *
+        * */
         scanner.close();
     }
 }
