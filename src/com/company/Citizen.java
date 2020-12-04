@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Citizen {
 
+    /*
+    * Test commit.
+    * */
     public Citizen(int limit) {
         Scanner scanner = new Scanner(System.in);
         String[] citizenName = new String[limit];
