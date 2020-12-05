@@ -13,13 +13,18 @@ public class Citizen {
         final int currentYear = 2020;
         int[] id = new int[limit];
 
-        System.out.print("Enter year of birth: ");
-        int birthYear = scanner.nextInt();
-        int age = currentYear - birthYear;
 
-        scanner.nextLine();
         for (int i = 0; i < limit; i++) {
-            if (age > 18) {
+            System.out.print("Enter year of birth: ");
+            int birthYear = scanner.nextInt();
+            int age = currentYear - birthYear;
+
+            scanner.nextLine();
+            if (age < 18)
+            {
+                System.out.println("Not Eligible For Voting");
+            }
+            else{
                 System.out.print("\tEnter Name: ");
                 citizenName[i] = scanner.nextLine();
 
