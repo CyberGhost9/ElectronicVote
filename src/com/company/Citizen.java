@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class Citizen {
 
-    /*
-    * Test commit.
-    * */
     public Citizen(int limit) {
         Scanner scanner = new Scanner(System.in);
         String[] citizenName = new String[limit];
@@ -20,11 +17,10 @@ public class Citizen {
             int age = currentYear - birthYear;
 
             scanner.nextLine();
-            if (age < 18)
-            {
+            if (age < 18) {
                 System.out.println("Not Eligible For Voting");
-            }
-            else{
+                return;
+            } else {
                 System.out.print("\tEnter Name: ");
                 citizenName[i] = scanner.nextLine();
 
